@@ -1,7 +1,12 @@
-import react from 'react';
+import React from 'react';
+import ChessBoard from '../components/Chess/ChessBoard';
 
-export default () => {
-  return (
-    <h1>Hello from react</h1>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <ChessBoard />
+    );
+  }
 }
+
+export default App;

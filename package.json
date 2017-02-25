@@ -1,27 +1,30 @@
 {
-  "name": "intro",
-  "version": "0.0.0",
+  "name": "reactchess",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "babel-node server/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon --watch server --exec babel-node -- server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "webpack --progress --profile --colors --display-error-details --display-cached"
   },
-  "author": "",
+  "author": "Cheta",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.23.0",
-    "babel-core": "^6.23.1",
-    "babel-loader": "^6.3.2",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "nodemon": "^1.11.0",
-    "webpack": "^2.2.1",
-    "webpack-dev-middleware": "^1.10.1"
+    "react-hot-loader": "^1.3.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.17.1"
   },
   "dependencies": {
     "express": "^4.14.1",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.1.0",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.5.0"
   }
 }
