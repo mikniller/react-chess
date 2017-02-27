@@ -1,10 +1,15 @@
 import React from 'react';
-import ChessBoard from '../components/Chess/ChessBoard';
+import NavigationBar from '../components/NavigationBar';
+
 
 class App extends React.Component {
   render() {
     return (
-      <ChessBoard />
+      <div id="container">
+          <NavigationBar/>
+          {this.props.children}  
+      </div>
+
     );
   }
 }
